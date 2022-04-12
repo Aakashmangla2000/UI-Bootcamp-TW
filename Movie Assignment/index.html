@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .movie-section{
+        display: flex;
+    }
+    .movie-card{
+        display: block;
+        width: 30%;
+        margin: 20px 20px 20px 20px;
+        border: 5px;
+        border-color: black;
+        border-style: solid;
+        padding: 20px;
+    }
+    img{
+        width:90%;
+        display: block;
+        margin: auto;
+    }
+    p{
+        text-align: center;
+    }
+</style>
 <body>
     <header><h1>Movies</h1></header>
     <main>
@@ -20,21 +42,27 @@
             </div>
         </nav>
         <section>
-            <div>
-                <img src="images/movie1.jpeg" alt=""/>
-                <p>Avengers Endgame</p>
-            </div>
-            <div>
-                <img src="images/movie2.jpeg" alt=""/>
-                <p>Spider-Man: Into The Spider-Verse</p>
-            </div>
-            <div>
-                <img src="images/movie3.jpeg" alt=""/>
-                <p>Bahubali</p>
-            </div>
-            <div>
-                <img src="images/movie4.jpeg" alt=""/>
-                <p>Highway</p>
+            <div class="movie-section">
+                <div class="movie-card">
+                    <img src="images/movie1.jpeg" alt=""/>
+                    <hr>
+                    <p>Avengers Endgame</p>
+                </div>
+                <div class="movie-card">
+                    <img src="images/movie2.jpeg" alt=""/>
+                    <hr>
+                    <p>Spider-Man: Into The Spider-Verse</p>
+                </div>
+                <div class="movie-card">
+                    <img src="images/movie3.jpeg" alt=""/>
+                    <hr>
+                    <p>Bahubali</p>
+                </div>
+                <div class="movie-card">
+                    <img src="images/movie4.jpeg" alt=""/>
+                    <hr>
+                    <p>Highway</p>
+                </div>
             </div>
         </section>
     </main>
